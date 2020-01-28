@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OtpDetailsActivity"
+    android:background="@drawable/logreg">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/sv_otp">
+
+        <RelativeLayout
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter Your Details"
+                android:fontFamily="@font/asap_bold"
+                android:textColor="#FFFFFE"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.13" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_otp"
+                android:layout_width="500dp"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="10dp"
+                android:layout_height="300dp"
+                android:layout_marginTop="150dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <EditText
+                        android:id="@+id/firstName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="20dp"
+                        android:drawableLeft="@drawable/ic_person_black_24dp"
+                        android:ems="10"
+                        android:hint="First Name"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textColorHint="#000000"
+                        android:background="@drawable/input_design"/>
+
+                    <EditText
+                        android:id="@+id/lastName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="10dp"
+                        android:drawableLeft="@drawable/ic_person_black_24dp"
+                        android:ems="10"
+                        android:hint="Last Name"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textColorHint="#000000"
+                        android:background="@drawable/input_design" />
+
+                    <EditText
+                        android:id="@+id/emailAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/input_design"
+                        android:drawableLeft="@drawable/ic_email_black_24dp"
+                        android:ems="10"
+                        android:hint="Email Address"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textColorHint="#000000" />
+
+                    <Button
+                        android:id="@+id/saveBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_two"
+                        android:text="Save"
+                        android:textColor="#F9FAF8"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/asap_bold"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="50dp"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

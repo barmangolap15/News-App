@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@drawable/login">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/sv_login">
+
+        <RelativeLayout
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/person_down"
+                android:layout_width="123dp"
+                android:layout_height="144dp"
+                android:layout_marginLeft="235dp"
+                android:layout_marginTop="55dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/person_down" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="USER LOGIN"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/asap_bold"
+                android:textColor="#000"
+                android:layout_marginTop="120dp"
+                android:gravity="center"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_login"
+                android:layout_width="350dp"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="10dp"
+                android:layout_height="280dp"
+                android:layout_marginTop="230dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                        <EditText
+                            android:id="@+id/login_phone_number_input"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:hint="Enter Phone number"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginRight="12dp"
+                            android:layout_marginTop="10dp"
+                            android:textColorHint="#000"
+                            android:background="@drawable/input_design"
+                            android:padding="10dp"
+                            android:textColor="@color/colorPrimaryDark"/>
+
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/login_password_input"
+                            android:inputType="textPassword"
+                            android:hint="Enter password"
+                            android:textColorHint="#000"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginRight="12dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/input_design"
+                            android:padding="10dp"
+                            android:textColor="@color/colorPrimaryDark"/>
+
+                    <LinearLayout
+                        android:id="@+id/linear_layout_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_below="@+id/login_password_input"
+                        android:layout_marginTop="8dp">
+
+                        <com.rey.material.widget.CheckBox
+                            android:id="@+id/remember_me_chkb"
+                            style="@style/Material.Drawable.CheckBox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="18dp"
+                            android:fontFamily="@font/asap_bold"
+                            android:text="Remember me"
+                            android:textColor="#000"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            app:cbd_strokeColor="@color/colorPrimaryDark" />
+
+                        <TextView
+                            android:id="@+id/forget_password_link"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginTop="5dp"
+                            android:text="Forget Password"
+                            android:textColor="#000"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/login_btn"
+                        android:text="USER LOGIN"
+                        android:layout_marginTop="12dp"
+                        android:layout_gravity="center"
+                        android:textColor="#fff"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/asap_bold"
+                        android:textSize="22sp"
+                        android:background="@drawable/btn_two"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/or"
+                        android:text="OR"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:fontFamily="@font/asap_bold"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/direct_reg"
+                        android:text="New menber? Click to Register"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_marginTop="5dp"
+                        android:textSize="15sp"
+                        android:clickable="true" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/sigin_google"
+                android:text="SIGNIN WITH GOOGLE"
+                android:background="@drawable/btn_google"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/asap_bold"
+                android:layout_below="@+id/cv_login"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                />
+
+            <Button
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/sigin_fb"
+                android:text="SIGNIN WITH FACEBOOK"
+                android:background="@drawable/btn"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/asap_bold"
+                android:layout_below="@+id/sigin_google"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

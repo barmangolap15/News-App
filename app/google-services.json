@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "881828683754",
+    "firebase_url": "https://daily-news-app-53726.firebaseio.com",
+    "project_id": "daily-news-app-53726",
+    "storage_bucket": "daily-news-app-53726.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:881828683754:android:c8eb0f0ae9e293721b9c93",
+        "android_client_info": {
+          "package_name": "com.example.dailynews"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "881828683754-3ojfljr8sgveei693cdiondmi21ds2cl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dailynews",
+            "certificate_hash": "49429800c8588dfa3972411d666d9169471fa399"
+          }
+        },
+        {
+          "client_id": "881828683754-28k0u1lvulgpj6u0nrb372sjrjgjh28i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUJqCJ-s_UJq-wHjc-jOgbnRC3pJXCj7E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "881828683754-28k0u1lvulgpj6u0nrb372sjrjgjh28i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

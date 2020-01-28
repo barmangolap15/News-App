@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogRegActivity"
+    android:background="@drawable/logreg">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/welcomeTxt"
+        android:text="Welcome to"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/asap_bold"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:layout_marginTop="80dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dnaText"
+        android:layout_below="@+id/welcomeTxt"
+        android:text="DNA"
+        android:gravity="center"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/asap_bold"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dnaSubText"
+        android:text="Daily News App"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:fontFamily="@font/asap_bold"
+        android:gravity="center"
+        android:layout_below="@+id/dnaText"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/sv">
+
+        <RelativeLayout
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv"
+                android:layout_width="350dp"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="10dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="220dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/logOregBtn"
+                        android:text="LOGIN WITH PHONE NUMBER"
+                        android:layout_gravity="center"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:padding="5dp"
+                        android:textColor="#fff"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/asap_bold"
+                        android:background="@drawable/btn_two"/>
+
+                    <Button
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/joinNowBtn"
+                        android:text="New User? Register with Phone number"
+                        android:layout_gravity="center"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:padding="5dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/asap_bold"
+                        android:background="@drawable/btn"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/or_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OR"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:layout_below="@id/cv"
+                android:layout_centerHorizontal="true"/>
+            <Button
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/sigin_dir_google"
+                android:text="SIGNIN WITH GOOGLE"
+                android:background="@drawable/btn_google"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/asap_bold"
+                android:layout_below="@+id/or_1"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                />
+
+            <Button
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/sigin_dir_fb"
+                android:text="SIGNIN WITH FACEBOOK"
+                android:background="@drawable/btn"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/asap_bold"
+                android:layout_below="@+id/sigin_dir_google"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

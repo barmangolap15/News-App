@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="8dp"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/img"
+                android:scaleType="centerCrop"
+                tools:ignore="UnusedAttribute"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:id="@+id/shadow_bottom"
+                android:src="@drawable/bottom_shadow"
+                android:layout_alignBottom="@+id/img"/>
+
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/progress_load_photo"
+                style="@android:style/Widget.ProgressBar.Small"
+                android:layout_marginTop="70dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:id="@+id/author"
+                android:text="Author"
+                android:drawablePadding="10dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="#fff"
+                android:singleLine="true"
+                android:layout_marginRight="160dp"
+                android:gravity="bottom"
+                android:layout_alignLeft="@+id/title"
+                android:layout_alignStart="@+id/title"
+                android:layout_alignRight="@+id/layoutDate"
+                android:layout_alignTop="@+id/layoutDate"
+                android:layout_alignEnd="@+id/layoutDate"/>
+
+            <FrameLayout
+                android:id="@+id/layoutDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img"
+                android:background="@drawable/round_white"
+                android:padding="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="-50dp">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/ic_date"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/publishedAt"
+                    android:textColor="#606060"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="27dp"
+                    android:layout_marginRight="10dp"
+                    android:text="01 January 1990" />
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img"
+                android:layout_marginLeft="16sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="16sp"
+                android:fontFamily="sans-serif-light"
+                android:text="Title"
+                android:textColor="@color/colorTextTilte"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:fontFamily="@font/asap_bold" />
+
+            <TextView
+                android:id="@+id/desc"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_below="@+id/title"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="16dp"
+                android:text="Desc" />
+
+            <TextView
+                android:id="@+id/source"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_below="@+id/desc"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:drawablePadding="10dp"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif-light"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="Source"
+                android:textColor="@color/colorTextTilte"
+                android:textStyle="bold"
+                app:fontFamily="@font/asap_bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:id="@+id/time"
+                android:layout_below="@+id/desc"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toRightOf="@+id/source"
+                android:maxLines="1"
+                android:drawablePadding="10dp"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:text="Time"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>
